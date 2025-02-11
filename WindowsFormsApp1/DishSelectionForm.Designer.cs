@@ -42,7 +42,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(190, 24);
             this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+
             // 
             // comboBox2
             // 
@@ -69,7 +69,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Save_Dishes";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.bntSaveInfo);
             // 
             // button2
             // 
@@ -79,7 +79,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Check_Price";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.btnCheckPrice);
             // 
             // DishSelectionForm
             // 
@@ -93,6 +93,7 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "DishSelectionForm";
             this.Text = "DishSelectionForm";
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

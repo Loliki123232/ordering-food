@@ -14,10 +14,18 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
 
-            dishPrices.Add("Картошка", 5.00m);
-            dishPrices.Add("Суп", 7.50m);
+            dishPrices.Add("Карпача из лосося", 5.00m);
+            dishPrices.Add("Борщ", 7.50m);
             dishPrices.Add("Салат", 6.00m);
             dishPrices.Add("Чай", 2.00m);
+            dishPrices.Add("Кофе", 4.50m);
+            dishPrices.Add("Гренки", 5.30m);
+            dishPrices.Add("Паста", 12.00m);
+            dishPrices.Add("Пицца", 8.70m);
+            dishPrices.Add("Кока Кола", 3.45m);
+            dishPrices.Add("Пельмени", 8.25m);
+            dishPrices.Add("Бургер", 13.25m);
+            dishPrices.Add("Роллы", 10.10m);
 
             foreach (string dish in dishPrices.Keys)
             {
@@ -35,9 +43,8 @@ namespace WindowsFormsApp1
             comboBox2.Items.Add("10");
 
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void bntSaveInfo(object sender, EventArgs e)
         {
-
             if (comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
             {
                 MessageBox.Show("Пожалуйста, выберите блюдо и количество.");
@@ -73,11 +80,8 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnCheckPrice(object sender, EventArgs e)
         {
             if (comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
             {
@@ -105,6 +109,6 @@ namespace WindowsFormsApp1
             labelTotal.Text = $"Итоговая стоимость: {totalCost:C}";
         }
 
-     
+      
     }
 }

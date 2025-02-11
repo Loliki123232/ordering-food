@@ -32,21 +32,21 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ClientOrAdminForm_Load(object sender, EventArgs e)
         {
-            ClientForm form = new ClientForm();
-            form.ShowDialog();
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnShowAdminForm(object sender, EventArgs e)
         {
             AdminForm form = new AdminForm();
             form.ShowDialog();
         }
 
-        private void ClientOrAdminForm_Load(object sender, EventArgs e)
+        private void bntShowClientForm(object sender, EventArgs e)
         {
-
+            ClientForm form = new ClientForm();
+            form.ShowDialog();
         }
     }
 }
